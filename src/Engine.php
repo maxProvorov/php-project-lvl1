@@ -7,23 +7,27 @@ use function cli\prompt;
 
 const MAX_CORRECT_ANSWERS = 3;
 
-function runner($decription, $gameData) {
-    
+function runner($description, $generateGameData)
+{
     $name = greetUser();
-    line($decription);
+    line($description);
     $countCorrect = 0;
-    while($countCorrect < MAX_CORRECT_ANSWERS) {
-        [$question, $correctAnsver] = $gameData;
-        line('Question: %d', $question);
+
+    while ($countCorrect < MAX_CORRECT_ANSWERS) {
+        [$question, $correctAnswer] = $generateGameData();
+        line('Question: %s', $question);
         $answer = prompt('Your answer');
-        if($answer !== $correctAnsver) {
-            line("%s is wrong answer ;(. Correct answer was '%s'.", $answer, $correctAnsver);
+
+        if ($answer !== $correctAnswer) {
+            line("%s is wrong answer ;(. Correct answer was '%s'.", $answer, $correctAnswer);
             line("Let's try again, %s!", $name);
-            return;
+            $countCorrect = 0; // Сбросим счетчик правильных ответов при ошибке
+        } else {
+            line("Correct!");
+            $countCorrect++;
         }
-        line("Correct!");
-        $countCorrect++;
     }
+
     line("Congratulations, %s!", $name);
 }
 
