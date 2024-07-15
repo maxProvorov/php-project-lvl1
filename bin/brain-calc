@@ -2,7 +2,9 @@
 <?php
 
 require_once __DIR__ . '/../vendor/autoload.php';
-
+use function cli\line;
+use function cli\prompt;
 use function BrainGames\Cli\greetUser;
+use function BrainGames\Games\Calc\run;
 
-greetUser();
+runGame();
