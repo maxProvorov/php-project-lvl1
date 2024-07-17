@@ -22,6 +22,7 @@ function runner($description, $generateGameData)
         if ($answer !== $correctAnswer) {
             line("'%s' is wrong answer ;(. Correct answer was '%s'.", $answer, $correctAnswer);
             line("Let's try again, %s!", $name);
+            return;
         } else {
             line("Correct!");
             $countCorrect++;
