@@ -9,7 +9,7 @@ function greetUser()
 {
     line('Welcome to the Brain Games!');
     line('May I have your name?');
-    $name = prompt('');
+    $name = trim(fgets(STDIN));
     line("Hello, %s!", $name);
     return $name;
 }
