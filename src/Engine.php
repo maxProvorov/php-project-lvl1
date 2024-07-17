@@ -2,6 +2,7 @@
 
 namespace BrainGames\Engine;
 
+use function BrainGames\Cli\greetUser;
 use function cli\line;
 use function cli\prompt;
 
@@ -28,10 +29,4 @@ function runner($description, $generateGameData)
     }
 
     line("Congratulations, %s!", $name);
-}
-
-function greetUser()
-{
-    line('Welcome to the Brain Games!');
-    return prompt('May I have your name?');
 }
