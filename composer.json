@@ -4,17 +4,15 @@
         "psr-4": {
             "Hexlet\\Code\\": "src/",
             "BrainGames\\Cli\\": "src/",
-            "BrainGames\\Engine\\": "src/",
-            "BrainGames\\Games\\Calc\\": "src/Games/",
-            "BrainGames\\Games\\Even\\": "src/Games/",
-            "BrainGames\\Games\\Gcd\\": "src/Games/"
+            "BrainGames\\Engine\\": "src/"
         },
         "files": [
             "src/Cli.php",
             "src/Engine.php",
             "src/Games/Calc.php",
             "src/Games/Even.php",
-            "src/Games/Gcd.php"
+            "src/Games/Gcd.php",
+            "src/Games/BrainProgression.php"
         ]
     },
     "authors": [
@@ -27,7 +25,8 @@
         "bin/brain-games",
         "bin/brain-even",
         "bin/brain-calc",
-        "bin/brain-gcd"
+        "bin/brain-gcd",
+        "bin/brain-progression"
     ],
     "require": {
         "wp-cli/php-cli-tools": "^0.12.0"

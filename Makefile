@@ -18,3 +18,5 @@ lint:
 
 bgcd:
 	./bin/brain-gcd
+bp:
+	./bin/brain-progression
