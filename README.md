@@ -21,32 +21,37 @@ make install
 ```
 
 ## Демонстрация игрового процесса
-Аскинема для игры "Проверка на чётность"
-https://asciinema.org/a/z4ekgo4Pnjb3bsR9TDyX4ju3V
+"Проверка на чётность"
+
+Аскинема: https://asciinema.org/a/z4ekgo4Pnjb3bsR9TDyX4ju3V
 ```bash
 make brain-even
 ```
 
-Аскинема для игры "Калькулятор"
-https://asciinema.org/a/Yvt21chXMP0I7IbaBmK1mXLZR
+"Калькулятор"
+
+Аскинема: https://asciinema.org/a/Yvt21chXMP0I7IbaBmK1mXLZR
 ```bash
 make brain-calc
 ```
 
-Аскинема для игры "НОД"
-https://asciinema.org/a/leewpScp0rhrBycGSjkB8PjXG
+"НОД"
+
+Аскинема: https://asciinema.org/a/leewpScp0rhrBycGSjkB8PjXG
 ```bash
 make brain-gcd
 ```
 
-Аскинема для игры "Арифметическая прогрессия"
-https://asciinema.org/a/uoEvF9y8ms46JNJiheofff9Zq
+"Арифметическая прогрессия"
+
+Аскинема: https://asciinema.org/a/uoEvF9y8ms46JNJiheofff9Zq
 ```bash
 make brain-progression
 ```
 
-Аскинема для игры "Простое ли число?"
-https://asciinema.org/a/aXRj0AecDKTvTr13sxirgCyWj
+"Простое ли число?"
+
+Аскинема: https://asciinema.org/a/aXRj0AecDKTvTr13sxirgCyWj
 ```bash
 make brain-prime
 ```
