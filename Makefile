@@ -15,3 +15,6 @@ lint:
 
  bc:
 	./bin/brain-calc
+
+bgcd:
+	./bin/brain-gcd
