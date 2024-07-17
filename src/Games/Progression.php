@@ -25,7 +25,7 @@ function runGame()
         $index = random_int(1, $count - 1);
         $question = $progression;
         $question[$index] = '..';
-        $question = implode(', ', $question);
+        $question = implode(' ', $question);
         $correctAnswer = (string) $progression[$index];
         return [$question, $correctAnswer];
     };
