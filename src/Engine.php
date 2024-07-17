@@ -8,7 +8,7 @@ use function cli\prompt;
 
 const MAX_CORRECT_ANSWERS = 3;
 
-function runner($description, $generateGameData)
+function runner(string $description, callable $generateGameData): void
 {
     $name = greetUser();
     line($description);

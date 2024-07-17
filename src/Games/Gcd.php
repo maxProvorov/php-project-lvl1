@@ -6,7 +6,7 @@ use function BrainGames\Engine\runner;
 
 const DESCRIPTION = 'Find the greatest common divisor of given numbers.';
 
-function swapIfGreater(&$x, &$y)
+function swapIfGreater(int &$x, int &$y): void
 {
     if ($y > $x) {
         $temp = $x;
@@ -15,7 +15,7 @@ function swapIfGreater(&$x, &$y)
     }
 }
 
-function calc($x, $y)
+function calc(int $x, int $y): int
 {
     swapIfGreater($x, $y);
     $gcd = 1;
@@ -27,7 +27,7 @@ function calc($x, $y)
     return $gcd;
 }
 
-function runGame()
+function runGame(): void
 {
     $generateGameData = function () {
         $x = random_int(1, 99);

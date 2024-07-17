@@ -6,7 +6,7 @@ use function BrainGames\Engine\runner;
 
 const DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-function isPrime($number)
+function isPrime(int $number): bool
 {
     if ($number < 2) {
         return false;
@@ -19,7 +19,7 @@ function isPrime($number)
     return true;
 }
 
-function runGame()
+function runGame(): void
 {
     $generateGameData = function () {
         $question = random_int(2, 99);
