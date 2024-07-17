@@ -6,7 +6,8 @@ use function BrainGames\Engine\runner;
 
 const DESCRIPTION = 'Find the greatest common divisor of given numbers.';
 
-function swapIfGreater(&$x, &$y) {
+function swapIfGreater(&$x, &$y)
+{
     if ($y > $x) {
         $temp = $x;
         $x = $y;
@@ -18,8 +19,8 @@ function calc($x, $y)
 {
     swapIfGreater($x, $y);
     $gcd = 1;
-    for($i = 2; $i <= $y; $i++) {
-        if($x % $i === 0 && $y % $i === 0) {
+    for ($i = 2; $i <= $y; $i++) {
+        if ($x % $i === 0 && $y % $i === 0) {
             $gcd = $i;
         }
     }
