@@ -13,7 +13,7 @@ Brain Games - это набор мини-игр, которые помогают
 
 ## Установка
 - Клонируйте репозиторий
-- выполните крманду
+- Выполните команду
 ```bash
 git clone https://github.com/hexlet-boilerplates/php-project-lvl1.git
 cd php-project-lvl1
@@ -23,35 +23,30 @@ make install
 ## Демонстрация игрового процесса
 Аскинема для игры "Проверка на чётность"
 https://asciinema.org/a/z4ekgo4Pnjb3bsR9TDyX4ju3V
-Запуск игры
 ```bash
 make brain-even
 ```
 
 Аскинема для игры "Калькулятор"
 https://asciinema.org/a/Yvt21chXMP0I7IbaBmK1mXLZR
-Запуск игры
 ```bash
 make brain-calc
 ```
 
 Аскинема для игры "НОД"
 https://asciinema.org/a/leewpScp0rhrBycGSjkB8PjXG
-Запуск игры
 ```bash
 make brain-gcd
 ```
 
 Аскинема для игры "Арифметическая прогрессия"
 https://asciinema.org/a/uoEvF9y8ms46JNJiheofff9Zq
-Запуск игры
 ```bash
 make brain-progression
 ```
 
 Аскинема для игры "Простое ли число?"
 https://asciinema.org/a/aXRj0AecDKTvTr13sxirgCyWj
-Запуск игры
 ```bash
 make brain-prime
 ```
