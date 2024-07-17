@@ -3,6 +3,7 @@
 namespace BrainGames\Engine;
 
 use function BrainGames\Cli\greetUser;
+use function BrainGames\Cli\getUserName;
 use function cli\line;
 use function cli\prompt;
 
@@ -10,7 +11,8 @@ const MAX_CORRECT_ANSWERS = 3;
 
 function runner($description, $generateGameData)
 {
-    $name = greetUser();
+    greetUser();
+    $name = getUserName();
     line($description);
     $countCorrect = 0;
 
