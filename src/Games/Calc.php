@@ -5,7 +5,6 @@ namespace BrainGames\Games\Calc;
 use function BrainGames\Engine\runner;
 
 const DESCRIPTION = 'What is the result of the expression?';
-
 const ACTIONS = ['+', '-', '*'];
 
 function calc(int $x, int $y, string $action): int
